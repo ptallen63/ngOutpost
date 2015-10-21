@@ -1,6 +1,6 @@
 describe('app', function() {
   // Load the module with MainController
-  beforeEach(module('ngOutpost'));
+  //beforeEach(module('ngOutpost'));
 
 
   it('Shouel be true', function() {
