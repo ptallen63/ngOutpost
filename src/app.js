@@ -2,28 +2,26 @@ var app = angular.module('ngOutpost', []);
 
 app.constant('ngOutpostApp',{
 	VERSION: '0.5.2',
-	API_KEY: 'YOUR API KEY',
-	APP_NAME: 'YOUR APP NAME'
 });
 
 
 
-app.factory('NgOutpostFactory', '$http','ngOutpostApp',function ($http) {
+app.factory('NgOutpostFactory', '$http','APP',function ($http,APP) {
 	var ngOutpostFactory = {};
 
 	ngOutpostFactory.getMessages = function (message) {
 
 		return $http.post('http://outpost.mulleravenue.com/api/get/message',{
-			api_key:ngOutpostApp.API_KEY
+			api_key:APP.API_KEY
 		});
 
 	};
 
 	ngOutpostFactory.createMessage = function (message) {
 		return $http.post('http://outpost.mulleravenue.com/api/create/message',{
-			api_key:ngOutpostApp.API_KEY,
+			api_key:APP.API_KEY,
 			source: message.source,
-			app_name: ngOutpostApp.APP_NAME,
+			app_name: APP.APP_NAME,
 			from_name: message.from_name,
 			from_email: message.from_email,
 			subject: message.subject,
@@ -34,7 +32,7 @@ app.factory('NgOutpostFactory', '$http','ngOutpostApp',function ($http) {
 
 	ngOutpostFactory.deleteMessage = function (message) {
 		return $http.post('http://outpost.mulleravenue.com/api/delete/message',{
-			api_key:ngOutpostApp.API_KEY,
+			api_key:APP.API_KEY,
 			mid:message.mid
 		});
 	};
