@@ -1,7 +1,7 @@
 var app = angular.module('ngOutpost', []);
 
 app.constant('ngOutpostApp',{
-	VERSION: '0.5.2',
+	VERSION: '0.6.0',
 });
 
 
