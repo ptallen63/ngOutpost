@@ -9,6 +9,7 @@ npm:
     npm install ng-outpost
 
 bower: 
+
     bower install ng-outpost
 
 
