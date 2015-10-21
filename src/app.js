@@ -1,7 +1,7 @@
 var app = angular.module('ngOutpost', []);
 
 app.constant('ngOutpostApp',{
-	VERSION: '0.1.0',
+	VERSION: '0.5.2',
 	API_KEY: 'YOUR API KEY',
 	APP_NAME: 'YOUR APP NAME'
 });
