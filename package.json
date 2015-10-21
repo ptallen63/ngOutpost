@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/ptallen63/ngOutpost#readme",
   "dependencies": {
-    "angular": "^1.4.7"
+    "angular": "~1.4.7"
   },
   "devDependencies": {
     "grunt": "latest",
