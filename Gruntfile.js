@@ -48,7 +48,7 @@ module.exports = function(grunt) {
       },
       build: {
         files: {
-          'dist/js/scripts.min.js': 'src/*.js',
+          'dist/ngOutpost.min.js': 'src/*.js',
         }
       }
     },
