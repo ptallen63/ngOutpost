@@ -17,14 +17,14 @@ bower:
 #### Configuring
 
 
-In your angular application, you must have an 'APP' contstant set up with the following properties:
+In your angular application, you must have an `APP` contstant set up with the following properties:
 
     API_KEY: '<your api key for outpost>',
     APP_NAME: '<your application name>'
 
 
-include     'ngOutpot'    in your main app file. 
-inject    'NgOutpostFactory'    into the controller that you wish to record messages. 
+include `ngOutpot` in your main app file. 
+inject `NgOutpostFactory`into the controller that you wish to record messages. 
 
 
 ## Usage
@@ -32,7 +32,7 @@ inject    'NgOutpostFactory'    into the controller that you wish to record mess
 
 #### Methods
 
-The module comes with one factory    NgOutpostFactory    that have three methods.
+The module comes with one factory `NgOutpostFactory` that have three methods.
 
     NgOutpostFactory.getMessages();
     NgOutpostFactory.createMessage();
