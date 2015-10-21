@@ -1,0 +1,24 @@
+{
+  "name": "ng-outpost",
+  "description": "This is an Angular module to work withe the Muller Avenue group API",
+  "main": "app.js",
+  "authors": [
+    "Paul Allen"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Angular",
+    "API"
+  ],
+  "homepage": "https://github.com/ptallen63/ngOutpost",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
