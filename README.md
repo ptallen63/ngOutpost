@@ -23,7 +23,7 @@ In your angular application, you must have an `APP` contstant set up with the fo
     APP_NAME: '<your application name>'
 
 
-include `ngOutpot` in your main app file. 
+include `ngOutpost` in your main app file. 
 inject `NgOutpostFactory`into the controller that you wish to record messages. 
 
 
