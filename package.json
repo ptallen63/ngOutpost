@@ -1,6 +1,6 @@
 {
   "name": "ng-outpost",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "This is an Angular module to work withe the Muller Avenue group API",
   "main": "app.js",
   "scripts": {
