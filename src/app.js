@@ -1,12 +1,12 @@
 var app = angular.module('ngOutpost', []);
 
 app.constant('ngOutpostApp',{
-	VERSION: '0.6.0',
+	VERSION: '0.6.1',
 });
 
 
 
-app.factory('NgOutpostFactory', '$http','APP',function ($http,APP) {
+app.factory('NgOutpostFactory', ['$http','APP',function ($http,APP) {
 	var ngOutpostFactory = {};
 
 	ngOutpostFactory.getMessages = function (message) {
@@ -39,4 +39,4 @@ app.factory('NgOutpostFactory', '$http','APP',function ($http,APP) {
 
 
 	return ngOutpostFactory;
-});
+}]);
