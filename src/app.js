@@ -6,7 +6,7 @@ app.constant('ngOutpostApp',{
 
 
 
-app.factory('NgOutpostFactory', '$http','APP',function ($http,APP) {
+app.factory('NgOutpostFactory', ['$http','APP',function ($http,APP) {
 	var ngOutpostFactory = {};
 
 	ngOutpostFactory.getMessages = function (message) {
@@ -39,4 +39,4 @@ app.factory('NgOutpostFactory', '$http','APP',function ($http,APP) {
 
 
 	return ngOutpostFactory;
-});
+}]);
